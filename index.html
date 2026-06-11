@@ -3,63 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Technical Tables</title>
+    <title>Responsive Technical Reference Tables</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-</head>
 
+</head>
 <body>
     <header class="bg-light border-bottom py-4">
-    <div class="container">
-      <h1>Technical Reference Guide</h1>
-      <p class="lead">
-        Responsive recreation of technical reference tables originally provided as an SVG.
-      </p>
-    </div>
-  </header>
+  <div class="container">
+    <h1>Status Code  Reference Guide</h1>
+    <p class="lead">
+      Responsive recreation of technical reference tables originally provided as an SVG.
+    </p>
+  </div>
+</header>
 
-  <main class="container my-5">
+<main class="container my-5">
 
-    <!-- Status Codes -->
-    <section id="status-codes" class="mb-5">
-      <h2>Status Code Table</h2>
-      <p>
+  <!-- Status Table -->
+  <section id="status-codes" class="mb-5">
+
+    <h2 class="mb-3">Status Code Table</h2>
+
+    <p class="text-muted">
         Status codes are displayed as a traditional table on larger screens and
         optimized for mobile viewing on smaller devices.
+    </p>
+
+    <div class="row">
+
+        <!-- LEFT TABLE -->
+        <div class="col-lg-6">
+
+            <h3 class="h5 mb-3">Status Codes 10 - 25</h3>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered align-middle">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Major</th>
+                            <th>Minor</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>L1 polarity fault</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">Rapid flash LED</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>Dissipation event detected, operate blower</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">otR</td>
+                            <td>Firmware install in process</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">btL</td>
+                            <td>Failed to load, retry firmware install</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>W on at power up</td>
+                        </tr>
+
+                        <tr>
+                            <td>13 (3hr)</td>
+                            <td>1</td>
+                            <td>Limit Lockout</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">14 (3hr)</td>
+                            <td>1</td>
+                            <td>Ignition Lockout after 4 consecutive ignition tries</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Flame lost 3 times after 70s of heating</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Max ignitions reached in heat cycle</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Lockout - 7 LPS open events during a heat request.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">15 (3hr)</td>
+                            <td>1</td>
+                            <td>Lockout - no Blower rpms detected</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Lockout - Failed to reach 500rpm</td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td>1</td>
+                            <td>Lost BTM Communication</td>
+                        </tr>
+
+                        <tr>
+                            <td>21</td>
+                            <td>1</td>
+                            <td>24VAC sensed on gas valve when shouldn't be, power reset only</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">22</td>
+                            <td>1</td>
+                            <td>False flame</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>LPS stuck closed</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">23</td>
+                            <td>5</td>
+                            <td>HPS stuck closed</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>MPS stuck closed</td>
+                        </tr>
+
+                        <tr>
+                            <td>24</td>
+                            <td>1</td>
+                            <td>Fuse fault</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">25</td>
+                            <td>1</td>
+                            <td>No program</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Corrupted program file, reprogram control.</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Main program invalid, using backup program to operate.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+        <!-- RIGHT TABLE -->
+        <div class="col-lg-6">
+
+            <h3 class="h5 mb-3">Status Codes 25 - 34</h3>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered align-middle">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Major</th>
+                            <th>Minor</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td rowspan="2">25</td>
+                            <td>5</td>
+                            <td>Installer settings corrupted.</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Wrong program, reprogram control.</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                If program in furnace control is missing, not recognized,
+                                or corrupted. Reprogram control with correct program #
+                                as listed on the rating plate. Replace control if issue remains.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">27</td>
+                            <td>1</td>
+                            <td>Program in super plug is missing, not recognized, or corrupted.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Medium heat pressure switch input OFF when it should be ON</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Medium heat pressure switch input ON when it should be OFF</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">31</td>
+                            <td>1</td>
+                            <td>Medium heat pressure switch input OFF when it should be ON</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Medium heat pressure switch input ON when it should be OFF</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Open HPS - HPS failed to close in 75s when transitioning from low to high heat</td>
+                        </tr>
+
+                        <tr>
+                            <td>32</td>
+                            <td>2</td>
+                            <td>Open Low pressure switch (LPS)</td>
+                        </tr>
+
+                        <tr>
+                            <td>33</td>
+                            <td>1</td>
+                            <td>Main Limit circuit open</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="5">34</td>
+                            <td>1</td>
+                            <td>Ignition fault - four consecutive ignition trials.</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Low or Medium Heat flame lost before blower on-delay</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Low or Medium Heat flame lost after blower on-delay</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>High heat flame lost before blower on-delay</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>High heat flame lost after blower on-delay</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- Menu Navigation -->
+  <section id="menu-navigation" class="mb-5">
+
+    <h2 class="mb-3">Menu Navigation</h2>
+
+    <div class="row">
+
+        <!-- System Status -->
+        <div class="col-lg-5">
+
+            <table class="table table-striped table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th colspan="2" class="table-dark">System Status</th>
+                    </tr>
+                    <tr>
+                        <th>Display</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>IdL</td>
+                        <td>Idle / Standby Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ht-%rate</td>
+                        <td>Heating Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>CL2</td>
+                        <td>High Cooling Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>CL1</td>
+                        <td>Low Cooling Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>HPd</td>
+                        <td>Heat Pump Defrost Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>CFn, CF2, CP3</td>
+                        <td>Continuous Fan Mode</td>
+                    </tr>
+
+                    <tr>
+                        <td>##.#</td>
+                        <td>Active Status Code </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div class="col-lg-7">
+
+            <table class="table table-striped table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th colspan="2" class="table-dark">Main Menu</th>
+                    </tr>
+                    <tr>
+                        <th>Display</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>FLt</td>
+                        <td>Last 7 faults that occurred</td>
+                    </tr>
+
+                    <tr>
+                        <td>to</td>
+                        <td>Temperature Display ON/OFF</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ht</td>
+                        <td>Heating Blower Speed</td>
+                    </tr>
+
+                    <tr>
+                        <td>CL2, CL1</td>
+                        <td>Cooling and Heat PumpBlower Speed</td>
+                    </tr>
+
+                     <tr>
+                        <td>CFn</td>
+                        <td>Continuouis Fan Speed</td>
+                    </tr>
+
+                     <tr>
+                        <td>Hod</td>
+                        <td>Heat Off delay</td>
+                    </tr>
+
+                     <tr>
+                        <td>Cod</td>
+                        <td>Cool OFF delay</td>
+                    </tr>
+
+                     <tr>
+                        <td>Htt</td>
+                        <td>Heating thermostat type</td>
+                    </tr>
+
+                     <tr>
+                        <td>Ctt</td>
+                        <td>Cooling thermostat type</td>
+                    </tr>
+
+                    <tr>
+                        <td>d/r</td>
+                        <td>Orientation upflow or downflow</td>
+                    </tr>
+                    <tr>
+                        <td>bSt</td>
+                        <td>Inducer Boost</td>
+                    </tr>
+                    <tr>
+                        <td>Air</td>
+                        <td>CFM display ON/OFF</td>
+                    </tr>
+                    <tr>
+                        <td>PnF</td>
+                        <td>Program # and Software version</td>
+                    </tr>
+                    <tr>
+                        <td>Ct</td>
+                        <td>Component test</td>
+                    </tr>
+                    <tr>
+                        <td>rSt</td>
+                        <td>Reset All Installer Settings to Factory Defaults</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- Component Test -->
+  <section id="component-tests" class="mb-5">
+  <h2 class="mb-3">Component Test</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <p>
+        To initiate the component test sequence, the control must be in
+        <strong>IdL</strong> mode. No thermostat demands
+        <strong>(W, Y, G)</strong>. Select component test
+        <strong>(Ct)</strong> from menu select buttons to start the component
+        test sequence. Once initiated the furnace control will perform the
+        following sequence:
       </p>
 
-      <!-- Desktop table goes here -->
+      <p class="mb-2">
+        <strong>Err</strong> during a step means issue detected.
+      </p>
 
-      <!-- Mobile cards go here -->
-    </section>
-
-    <!-- Menu Navigation -->
-    <section id="menu-navigation" class="mb-5">
-      <h2>Menu Navigation</h2>
-
-      <!-- Table or accordion goes here -->
-    </section>
-
-    <!-- Component Tests -->
-    <section id="component-tests" class="mb-5">
-      <h2>Component Tests</h2>
-
-      <!-- Content goes here -->
-    </section>
-
-  </main>
-
-  <footer class="bg-light border-top py-3">
-    <div class="container">
-      <small>
-        Built using semantic HTML, Bootstrap, and responsive design principles.
-      </small>
+      <ol class="mb-0">
+        <li><strong>Pur</strong> - Inducer ON &#40;remains ON for test&#41;.</li>
+        <li><strong>Sig</strong> - After 15s, Gas valve communication check for 15 seconds.</li>
+        <li><strong>HSI</strong> - After sig, HSI ON for 15 seconds.</li>
+        <li><strong>Fn</strong> - After HSI, then Blower ON for 15 seconds.</li>
+        <li><strong>End</strong> - After Blower, Inducer ON for 10s.</li>
+        <li>The test ends.</li>
+      </ol>
     </div>
-  </footer>
+  </div>
+</section>
 
-</body>
+</main>
 
-  </header>
+<footer class="bg-light border-top py-3">
+  <div class="container">
+    <small>
+      All copyrighted materials used herein are the property of their respective owenrs
+    </small>
+  </div>
+</footer>
 </body>
 </html>
