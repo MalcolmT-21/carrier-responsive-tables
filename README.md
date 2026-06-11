@@ -54,5 +54,5 @@ Key decisions included:
 * GitHub Pages
 
 
-## Love URL 
+## Live URL 
 * https://malcolmt-21.github.io/carrier-responsive-tables/
